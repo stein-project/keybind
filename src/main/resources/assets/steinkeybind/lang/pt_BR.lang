@@ -1,0 +1,15 @@
+# Keybind: mensagens e comandos numa tecla
+steinkeybind.binds=Binds
+steinkeybind.bind=Bind %d
+steinkeybind.modifier=Modificador
+steinkeybind.modifier.none=Nenhum
+steinkeybind.modifier.ctrl=Ctrl
+steinkeybind.modifier.shift=Shift
+steinkeybind.modifier.alt=Alt
+steinkeybind.text=Mensagem ou comando
+steinkeybind.hint=/home | gg  · use | para enviar várias
+steinkeybind.remove=Remover bind
+steinkeybind.add=Adicionar bind
+steinkeybind.sending=Envio
+steinkeybind.delay=Intervalo entre mensagens
+steinkeybind.seconds=%ss

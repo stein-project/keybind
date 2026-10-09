@@ -1,0 +1,15 @@
+# Keybind: chat messages and commands on a key
+steinkeybind.binds=Binds
+steinkeybind.bind=Bind %d
+steinkeybind.modifier=Modifier
+steinkeybind.modifier.none=None
+steinkeybind.modifier.ctrl=Ctrl
+steinkeybind.modifier.shift=Shift
+steinkeybind.modifier.alt=Alt
+steinkeybind.text=Message or command
+steinkeybind.hint=/home | gg  · use | to send several
+steinkeybind.remove=Remove bind
+steinkeybind.add=Add bind
+steinkeybind.sending=Sending
+steinkeybind.delay=Message interval
+steinkeybind.seconds=%ss
