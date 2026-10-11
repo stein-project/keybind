@@ -51,7 +51,7 @@ mod, also check that:
 - binds with and without a modifier on the same key still fire as described above;
 - the text is translated in `en_US`, `pt_BR` and `es_ES` (`src/main/resources/assets/steinkeybind/lang`).
 
-Releases are made by the maintainer: a `v<version>` tag, with `changelog/<version>.en_US.md` and `.pt_BR.md`
+Releases are made by the maintainer: a `v<version>` tag, with `changelog/<version>.en_US.md` (and optionally `.pt_BR.md`)
 written first (see `.github/workflows/release.yml`).
 
 ## Licence
