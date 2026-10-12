@@ -1,7 +1,7 @@
 {
   "id": "steinkeybind",
   "name": "Keybind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "X4vieer",
   "description": "Chat messages and commands on a key: press it and the game sends \"/home\". Several messages per key, with a modifier (Ctrl, Shift, Alt) and a gap between them so the server does not kick for spam.",
   "entry": "dev.xavier.stein.keybind.SteinKeybind",
