@@ -11,5 +11,6 @@ steinkeybind.hint=/home | gg  · usa | para enviar varios
 steinkeybind.remove=Quitar bind
 steinkeybind.add=Añadir bind
 steinkeybind.sending=Envío
+steinkeybind.serverOff=Desactivado en %s: este servidor no permite macros de chat
 steinkeybind.delay=Intervalo entre mensajes
 steinkeybind.seconds=%ss

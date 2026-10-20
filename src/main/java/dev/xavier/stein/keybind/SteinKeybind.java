@@ -14,6 +14,7 @@ import dev.xavier.stein.loader.api.ModConfig;
 import dev.xavier.stein.loader.api.ModContext;
 import dev.xavier.stein.loader.api.Page;
 import dev.xavier.stein.loader.api.Screens;
+import dev.xavier.stein.loader.api.Server;
 import dev.xavier.stein.loader.api.SteinMod;
 
 import org.lwjgl.input.Keyboard;
@@ -90,6 +91,11 @@ public final class SteinKeybind implements SteinMod {
      */
     private void pressed(int key) {
         if (key == Keys.KEY_NONE || Screens.isOpen() || Entities.self() == null) {
+            return;
+        }
+        // A bind is a chat macro: some servers (Hypixel) do not allow them, and there nothing
+        // fires while the player is on it; the binds themselves are kept.
+        if (!Server.allows("chatMacros")) {
             return;
         }
         List<Bind> plain = new ArrayList<>();
