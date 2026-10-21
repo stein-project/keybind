@@ -12,6 +12,7 @@ import dev.xavier.stein.loader.api.Lang;
 import dev.xavier.stein.loader.api.ModConfig;
 import dev.xavier.stein.loader.api.Option;
 import dev.xavier.stein.loader.api.Page;
+import dev.xavier.stein.loader.api.Server;
 
 import java.util.List;
 import java.util.function.BooleanSupplier;
@@ -31,8 +32,21 @@ final class KeybindPage {
 
     void build(Page page) {
         page.icon("key");
+        serverOff(page);
         binds(page);
         sending(page);
+    }
+
+    /**
+     * When the current server does not allow chat macros, a line at the top says so: the binds stay
+     * editable, they just do not fire there. The page is built when the Panel opens, so the server
+     * is the one the player is on at that moment.
+     */
+    private void serverOff(Page page) {
+        String server = Server.restrictedBy("chatMacros");
+        if (!server.isEmpty()) {
+            page.option(Option.action(Lang.tr("steinkeybind.serverOff", server), "", () -> {}));
+        }
     }
 
     private void binds(Page page) {
