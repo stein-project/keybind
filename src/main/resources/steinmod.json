@@ -5,5 +5,9 @@
   "author": "X4vieer",
   "description": "Chat messages and commands on a key: press it and the game sends \"/home\". Several messages per key, with a modifier (Ctrl, Shift, Alt) and a gap between them so the server does not kick for spam.",
   "entry": "dev.xavier.stein.keybind.SteinKeybind",
-  "loader": "0.1.28"
+  "loader": "0.1.28",
+  "features": [
+    "chatMacros"
+  ],
+  "source": "https://stein-project.github.io/registry/mods/keybind.json"
 }
